@@ -21,7 +21,7 @@ function App() {
       </div>
       <div className="contact">
         <h2>Contact</h2>
-        <p>blah blah blah</p>
+        <p>blah blah bla</p>
         <p>Ivan Escalante © 2020 </p>
       </div>
     </>
