@@ -72,12 +72,34 @@ abbr,
 acronym {
   border: 0;
 }
-.App {
+.landing-page {
   background-image: url("./assets/landing-page-bg.jpg");
   background-size: cover;
+  background-position: center;
   height: 100vh;
   color: hsl(0deg, 0%, 100%);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.my-story,
+.portfolio {
+  background-color: hsl(265deg, 50%, 5%);
+  height: 100vh;
+  color: hsl(0deg, 0%, 100%);
+}
+.tech-stack {
+  background-image: url("./assets/tech-stack-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: hsl(0deg, 0%, 100%);
+}
+.contact {
+  background-color: hsl(0deg, 0%, 90%);
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
