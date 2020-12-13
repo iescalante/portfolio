@@ -72,6 +72,34 @@ abbr,
 acronym {
   border: 0;
 }
+a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+}
+header {
+  position: fixed;
+  width: 100%;
+  background-color: hsl(265deg, 50%, 5%);
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+}
+.home {
+  margin-left: 16px;
+  font-size: 24px;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px;
+}
+.links {
+  margin: 0 16px;
+}
 .landing-page {
   background-image: url("./assets/landing-page-bg.jpg");
   background-size: cover;
@@ -83,18 +111,64 @@ acronym {
   align-items: center;
   justify-content: center;
 }
-.my-story,
+.intro {
+  font-size: 32px;
+}
+.name {
+  font-size: 64px;
+  margin-bottom: 48px;
+}
+.title {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 72px;
+}
+.contact > .title {
+  padding-top: 16px;
+}
+.about,
 .portfolio {
   background-color: hsl(265deg, 50%, 5%);
-  height: 100vh;
   color: hsl(0deg, 0%, 100%);
+  padding-bottom: 72px;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+.avatar {
+  background-image: url("./assets/avatar.jpg");
+  background-position: right;
+  background-size: cover;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 8px auto;
+}
+.bio > p {
+  margin: 8px;
 }
 .tech-stack {
   background-image: url("./assets/tech-stack-bg.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
   color: hsl(0deg, 0%, 100%);
+}
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.tech-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 64px;
+  font-size: 24px;
+}
+.tech {
+  margin-bottom: 8px;
 }
 .contact {
   background-color: hsl(0deg, 0%, 90%);
