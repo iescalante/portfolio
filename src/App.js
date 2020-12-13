@@ -8,6 +8,9 @@ import reactLogo from "./assets/react-logo.png";
 import reduxLogo from "./assets/redux-logo.png";
 import mongodbLogo from "./assets/mongodb-logo.png";
 import gitLogo from "./assets/git-logo.png";
+import twitterLogo from "./assets/twitter-logo.png";
+import linkedinLogo from "./assets/linkedin-logo.png";
+import githubLogo from "./assets/github-logo.png";
 
 function App() {
   return (
@@ -129,9 +132,25 @@ function App() {
       </div>
       <div id="contact" className="contact">
         <h2 className="title">Contact</h2>
-        <p>blah blah bla</p>
-        <p>Ivan Escalante © 2020 </p>
+        <section className="social-media-list">
+          <div className="social-media">
+            <a href="https://twitter.com/IvanEnriqueEC">
+              <img src={twitterLogo} className="media-logo" />
+            </a>
+          </div>
+          <div className="social-media">
+            <a href="https://www.linkedin.com/in/ivan-enrique-escalante-cornejo/">
+              <img src={linkedinLogo} className="media-logo" />
+            </a>
+          </div>
+          <div className="social-media">
+            <a href="https://www.github.com/iescalante">
+              <img src={githubLogo} className="media-logo" />
+            </a>
+          </div>
+        </section>
       </div>
+      <footer>Ivan Escalante © 2020 </footer>
     </>
   );
 }
