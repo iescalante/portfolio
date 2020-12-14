@@ -13,7 +13,11 @@ const Portfolio = () => {
         />
         <div className="project-info">
           <h2 className="project-title">AkullaBelka</h2>
-          <a href="https://akulla-belka.herokuapp.com/" target="_blank">
+          <a
+            href="https://akulla-belka.herokuapp.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
             DEMO
           </a>
           <p className="project-description">
@@ -35,7 +39,11 @@ const Portfolio = () => {
         />
         <div className="project-info">
           <h2 className="project-title">Wearabology</h2>
-          <a href="https://project-wearabology.herokuapp.com/" target="_blank">
+          <a
+            href="https://project-wearabology.herokuapp.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
             DEMO
           </a>
           <p className="project-description">
