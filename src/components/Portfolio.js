@@ -13,7 +13,9 @@ const Portfolio = () => {
         />
         <div className="project-info">
           <h2 className="project-title">AkullaBelka</h2>
-          <a href="https://akulla-belka.herokuapp.com/">DEMO</a>
+          <a href="https://akulla-belka.herokuapp.com/" target="_blank">
+            DEMO
+          </a>
           <p className="project-description">
             A small money-lending app that allows users to become borrowers
             and/or lenders in order to exchange money between them with a late
@@ -33,7 +35,9 @@ const Portfolio = () => {
         />
         <div className="project-info">
           <h2 className="project-title">Wearabology</h2>
-          <a href="https://project-wearabology.herokuapp.com/">DEMO</a>
+          <a href="https://project-wearabology.herokuapp.com/" target="_blank">
+            DEMO
+          </a>
           <p className="project-description">
             An e-commerce app done for a team project which allows the user to
             select items, add items to a cart, checkout and receive a
