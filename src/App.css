@@ -97,24 +97,21 @@ header {
   justify-content: space-between;
   padding: 8px;
 }
-@media only screen and (max-width: 600px) {
-  .menu {
-    display: none;
-  }
-  .home {
-    display: flex;
-    margin: 0 auto;
-    font-size: 32px;
-  }
-}
+
 .links {
   margin: 0 16px;
+}
+.links > a:hover,
+.home:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
 }
 .landing-page {
   background-image: url("./assets/landing-page-bg.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 100%;
   color: hsl(0deg, 0%, 100%);
   display: flex;
   flex-direction: column;
@@ -127,11 +124,35 @@ header {
 .name {
   font-size: 64px;
   margin-bottom: 48px;
+  animation: slideRight 1500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+    font-size: 128px;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    font-size: 64px;
+  }
 }
 .title {
   font-size: 32px;
   text-align: center;
   padding-top: 72px;
+}
+.job {
+  animation: slideLeft 2000ms forwards;
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 .contact > .title {
   padding-top: 16px;
@@ -141,6 +162,7 @@ header {
   background-color: hsl(265deg, 50%, 5%);
   color: hsl(0deg, 0%, 100%);
   padding-bottom: 72px;
+  width: 100%;
 }
 .bio {
   display: flex;
@@ -164,6 +186,7 @@ header {
   background-size: cover;
   background-position: center;
   color: hsl(0deg, 0%, 100%);
+  width: 100%;
 }
 .tech-list {
   display: flex;
@@ -192,6 +215,7 @@ header {
   flex-direction: column;
   margin: 24px;
 }
+
 .project-title {
   font-weight: bold;
   font-size: 16px;
@@ -205,6 +229,17 @@ header {
   width: fit-content;
   border-radius: 8px;
   padding: 4px 8px;
+}
+.project-info > a:hover {
+  animation: spin 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .project-description {
   line-height: 20px;
@@ -220,6 +255,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .social-media-list {
   display: flex;
@@ -232,8 +268,32 @@ header {
 .media-logo {
   width: 48px;
 }
+.media-logo:hover {
+  animation: spinIt 700ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes spinIt {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  85% {
+    transform: scale(2) rotate(350deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
 footer {
   font-size: 24px;
   margin: 16px auto;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .home {
+    display: flex;
+    margin: 0 auto;
+    font-size: 32px;
+  }
 }
