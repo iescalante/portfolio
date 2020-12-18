@@ -29,7 +29,9 @@ const TechStack = () => {
           <p>Node.js</p>
         </div>
         <div className="tech-div">
-          <img src={expressLogo} className="tech" alt="Express logo" />
+          <div className="tech-bg">
+            <img src={expressLogo} className="tech" alt="Express logo" />
+          </div>
           <p>Express</p>
         </div>
         <div className="tech-div">
@@ -41,7 +43,9 @@ const TechStack = () => {
           <p>Redux</p>
         </div>
         <div className="tech-div">
-          <img src={mongodbLogo} className="tech" alt="MongoDb logo" />
+          <div className="tech-bg">
+            <img src={mongodbLogo} className="tech" alt="MongoDb logo" />
+          </div>
           <p>MongoDB</p>
         </div>
         <div className="tech-div">

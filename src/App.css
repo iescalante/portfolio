@@ -203,6 +203,11 @@ header {
 .tech {
   margin-bottom: 8px;
 }
+.tech-bg {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 0 16px;
+  border-radius: 50%;
+}
 .project-div {
   display: flex;
 }
@@ -286,8 +291,12 @@ footer {
   font-size: 24px;
   margin: 16px auto;
   text-align: center;
+  background-color: hsl(0deg, 0%, 90%);
 }
 @media (max-width: 600px) {
+  header {
+    width: 100vw;
+  }
   .menu {
     display: none;
   }
@@ -295,5 +304,36 @@ footer {
     display: flex;
     margin: 0 auto;
     font-size: 32px;
+  }
+  .name {
+    font-size: 48px;
+  }
+  .project-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-preview {
+    width: 50%;
+  }
+  .project-info {
+    align-items: center;
+    justify-content: center;
+  }
+  .project-coming-soon {
+    font-size: 32px;
+  }
+  .social-media-list {
+    flex-direction: column;
+  }
+  .social-media {
+    padding: 48px;
+  }
+  .contact > .title {
+    padding-top: 32px;
+  }
+  footer {
+    margin: 0;
+    padding-bottom: 24px;
   }
 }

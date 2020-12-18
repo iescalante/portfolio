@@ -1,6 +1,7 @@
 import twitterLogo from "../assets/twitter-logo.png";
 import linkedinLogo from "../assets/linkedin-logo.png";
 import githubLogo from "../assets/github-logo.png";
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
@@ -27,6 +28,7 @@ const Contact = () => {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
